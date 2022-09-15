@@ -92,7 +92,7 @@ Support : codings.dev
 
 :root {
 	--primary-font: lato, sans-serif;
-	--secondary-font: proxima-nova, sans-serif;
+	--secondary-font: Orbitron, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,5 +163,13 @@ small, .small {
 /* #endregion Typography */
 
 .shock-header .navbar .navbar-brand .logo {
-    max-height: 30px;
+    max-height: 46px;
 }
+
+
+@media only screen and (max-width: 600px) {
+	.shock-header .navbar .navbar-brand .logo {
+		max-height: 32px;
+	}
+  }
+
