@@ -28,24 +28,24 @@ Support : codings.dev
 
 	/* Primary */
 	--primary-color: #063B75;
-	--primary-15-color: #07beb826;
-	--primary-25-color: #07beb840;
-	--primary-50-color: #07beb880;
-	--primary-75-color: #07beb8bf;
+	--primary-15-color: #063B7526;
+	--primary-25-color: #063B7540;
+	--primary-50-color: #063B7580;
+	--primary-75-color: #063B75bf;
 
 	/* Secondary */
 	--secondary-color: #009EE3;
-	--secondary-15-color: #009EE3;
-	--secondary-25-color: #6917d040;
-	--secondary-50-color: #6917d080;
-	--secondary-75-color: #6917d0bf;
+	--secondary-15-color: #009EE326;
+	--secondary-25-color: #009EE340;
+	--secondary-50-color: #009EE380;
+	--secondary-75-color: #009EE3bf;
 
 	/* Tertiary */
 	--tertiary-color: #FF0000;
-	--tertiary-15-color: #ff179126;
-	--tertiary-25-color: #ff179140;
-	--tertiary-50-color: #ff179180;
-	--tertiary-75-color: #ff1791bf;
+	--tertiary-15-color: #FF000026;
+	--tertiary-25-color: #FF000040;
+	--tertiary-50-color: #FF000080;
+	--tertiary-75-color: #FF0000bf;
 
 	/* Auxiliary */
 	--accent-color: #fedc00;
@@ -64,13 +64,13 @@ Support : codings.dev
 	--white-85-color: rgba(255, 255, 255, 0.85);
 
 	/* Gray */	
-	--gray-color: #8f93a5;
-	--gray-10-color: rgba(143, 147, 165, 0.1);
-	--gray-25-color: rgba(143, 147, 165, 0.25);
-	--gray-50-color: rgba(143, 147, 165, 0.50);
-	--gray-65-color: rgba(143, 147, 165, 0.65);
-	--gray-75-color: rgba(143, 147, 165, 0.75);
-	--gray-85-color: rgba(143, 147, 165, 0.85);
+	--gray-color: #F8F4F0;
+	--gray-10-color: rgba(248, 244, 240, 0.1);
+	--gray-25-color: rgba(248, 244, 240, 0.25);
+	--gray-50-color: rgba(248, 244, 240, 0.50);
+	--gray-65-color: rgba(248, 244, 240, 0.65);
+	--gray-75-color: rgba(248, 244, 240, 0.75);
+	--gray-85-color: rgba(248, 244, 240, 0.85);
 
 	/* Black */
 	--black-color: #1a1a20;
@@ -91,15 +91,37 @@ Support : codings.dev
 /* #region Typography */
 
 :root {
-	--primary-font: lato, sans-serif;
+	--primary-font: Dosis, sans-serif;
 	--secondary-font: Orbitron, sans-serif;
 }
 
+/*-- Menú --*/
+.shock-header .navbar .navbar-nav .megamenu .nav-link .text {
+	background: linear-gradient(to right,var(--tertiary-color),var(--secondary-color) 50%,var(--gray-color) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position .4s ease;
+	font-weight: 500;
+	color: var(--gray-color);
+}
+
+
+@media (max-width: 991px){
+	.shock-header .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+		color: var(--secondary-color);
+	}
+}
+
+/*-- End: Menú --*/
+
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+  	margin-top: 0;
+  	margin-bottom: 1.5rem;
 	font-family: var(--secondary-font);  
-  line-height: 1.2;
+  	line-height: 1.2;
 }
 
 .text-style-1, 
@@ -173,3 +195,339 @@ small, .small {
 	}
   }
 
+
+	
+
+	/* Shape Divider */
+
+	.custom-shape-divider-bottom-1664442233,
+	.custom-shape-divider-bottom-revisiones,
+	.custom-shape-divider-bottom-eventos{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+
+	.custom-shape-divider-bottom-1664442233 svg,
+	.custom-shape-divider-bottom-revisiones svg,
+	.custom-shape-divider-bottom-eventos svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 50px;
+	}
+
+	.custom-shape-divider-bottom-1664442233 .shape-fill,
+	.custom-shape-divider-bottom-revisiones .shape-fill {
+		fill: #1A1A20;
+	}
+
+
+
+
+
+	
+
+	
+
+	.custom-shape-divider-bottom-eventos .shape-fill
+	 {
+		fill: var(--gray-color);
+	}
+
+	/* End: Shape Divider */
+
+	
+
+
+	.revision-frenos ul > li:first-child,
+	.revision-frenos ul > li:last-child,
+	.revision-frenos ul > li,
+	.revision-neumaticos ul > li:first-child,
+	.revision-neumaticos ul > li:last-child,
+	.revision-neumaticos ul > li,
+	.electrico ul > li:first-child,
+	.electrico ul > li:last-child,
+	.electrico ul > li
+	
+	
+
+
+
+	{
+		
+		margin: 0.5rem 0.5rem;
+	}
+
+
+	
+
+
+	.revision-frenos .icon-list .image-icon,
+	.revision-neumaticos .icon-list .image-icon,
+	.electrico .icon-list .image-icon {
+		
+		height: 2rem;
+		margin-top: calc( 1rem / 2 );
+		
+		
+		
+		
+
+	}
+
+	
+
+	.content {
+		background-color: #fbfbfc;
+		overflow: hidden;
+		position: relative;
+		z-index: 3;
+	}
+	
+	
+	
+	.stage-1 .container-fluid .contenido-stage-1 .content-inner,
+	.stage-2 .container-fluid .contenido-stage-2 .content-inner,
+	.stage-3 .container-fluid .contenido-stage-3 .content-inner,
+	.activaciones .container-fluid .contenido-activaciones .content-inner {
+		display: -webkit-box!important;
+		display: -ms-flexbox!important;
+		display: flex!important;
+		-webkit-box-orient: vertical!important;
+		-webkit-box-direction: normal!important;
+		-ms-flex-direction: column!important;
+		flex-direction: column!important;
+		-webkit-box-pack: center!important;
+		-ms-flex-pack: center!important;
+		justify-content: center!important;
+	}
+	
+	.no-gutters {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.mb-6-repro {
+		margin-bottom: 24vw!important;
+	}
+	.mt-9-repro {
+		margin-top: 36vw!important;
+	}
+	
+	.stage-1,
+	.stage-2,
+	.stage-3,
+	.activaciones {
+		background-color: var(--gray-color);
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.stage-1 svg,
+	.stage-2 svg,
+	.stage-3 svg,
+	.activaciones svg {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		width: 100vw;
+		z-index: 2;
+	}
+	
+	.cb-img-container {
+		background: var(--black-color);
+		position: relative;
+	}
+	
+	.cb-img-container img {
+		height: auto;
+		opacity: 0.75;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	
+	.h-outline text {
+		font-family: var(--secondary-font);
+		font-weight: 700;
+		stroke: var(--tertiary-color);
+		text-transform: uppercase;
+	}
+	
+	.container-fluid .stage-1,
+	.container-fluid .stage-2,
+	.container-fluid .stage-3,
+	.container-fluid .activaciones {
+		padding-left: 8vw;
+		padding-right: 8vw;
+		background-color: var(--white-color);
+		position: relative;
+		z-index: 2;
+	}
+	
+	
+	.stage-1 .container-fluid .contenido-stage-1 .content-inner:after,
+	.stage-2 .container-fluid .contenido-stage-2 .content-inner:after,
+	.stage-3 .container-fluid .contenido-stage-3 .content-inner:after,
+	.activaciones .container-fluid .contenido-activaciones .content-inner:after {
+		background: var(--gray-color);
+		content: "";
+		height: 100%;
+		position: absolute;
+		right: -24vw;
+		top: 0;
+		width: 25vw;
+		z-index: -1;
+	}
+	
+	.fade-in {
+		-webkit-animation: fade-in 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+				animation: fade-in 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
+	
+	
+	 @-webkit-keyframes fade-in {
+		0% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+	  }
+	  @keyframes fade-in {
+		0% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+	  }
+	  
+	
+	@media (min-width:768px) {
+		.col-md-6-repro {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		.offset-md-6-repro {
+			margin-left: 50%;
+		}
+		.my-md-2-repro {
+			margin-top: 8vw!important;
+			margin-bottom: 8vw!important;
+		}
+		
+		.ml-md-2-repro {
+			margin-left: 8vw!important;
+		}
+	
+		.cb-img-container {
+			clip: rect(0, auto, auto, 0);
+			height: 100%;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			width: 100vw;
+			z-index: 0;
+		}
+		
+		.cb-img-container img {
+			bottom: 0;
+		  height: 100vh;
+		  left: 0;
+		  -o-object-fit: cover;
+		  object-fit: cover;
+		  position: fixed;
+		  right: 0;
+		  top: 0;
+		  -webkit-transform: perspective(0);
+		  transform: perspective(0);
+		  width: 100vw;
+		  z-index: -1;
+		}
+		
+		.stage-1 svg,
+		.stage-2 svg,
+		.stage-3 svg,
+		.activaciones svg {
+			position: fixed;
+			width: 50vw;
+		}
+		
+		.stage-1 .container-fluid,
+		.stage-2 .container-fluid,
+		.stage-3 .container-fluid,
+		.activaciones .container-fluid {
+			background-color: transparent;
+		}
+		
+		.stage-1 .container-fluid .contenido-stage-1 .content-inner,
+		.stage-2 .container-fluid .contenido-stage-2 .content-inner,
+		.stage-3 .container-fluid .contenido-stage-3 .content-inner,
+		.activaciones .container-fluid .contenido-activaciones .content-inner {
+			background: var(--gray-color);
+			height: 100vh;
+			margin-left: 70px;
+			position: relative;
+			z-index: 2;
+		}
+		
+	}
+
+
+
+	.mouse-down {
+		position: relative;
+		top: 50px !important;
+		right: -200px!important;
+		height: 45px;
+		width: 27px;
+		background-color: transparent;
+		border: 2px solid;
+		border-color: var(--primary-color) !important;
+		border-radius: 50rem;
+		cursor: pointer;
+		outline: none;
+		opacity: 0.9 !important;
+		-webkit-transition: all 0.3s ease-out 0s;
+		-o-transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		transition: all 0.3s ease-out 0s;
+	}
+
+	.mouse-down:before {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		content: '';
+		width: 6px;
+		height: 6px;
+		margin-left: -3px;
+		background-color: var(--color);
+		border-radius: 50%;
+		-webkit-animation: scroll-down-animation 2s infinite;
+		animation: scroll-down-animation 2s infinite;
+		box-sizing: border-box;
+	}
+
+	
+
+
+
+
+
+  
+  /*-- 2. Logo --*/
+  
+  /*.shock-header .navbar .navbar-brand .logo {
+    max-height: 50px;
+}
