@@ -521,10 +521,93 @@ small, .small {
 
 	
 
+	.main {
+		width: 100%;
+		opacity: 0;
+		display: none;
+		transition: opacity 1s ease-in;
+	  }
 
 
 
 
+	#app-preloader {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		gap: 46px;
+		justify-content: center;
+		align-items: center;
+		background: var(--black-color);
+		color: var(--secondary-color);
+	  
+		transition: .3s ease-in-out;
+	}
+	
+	#app-preloader .customloader {
+		
+		filter: opacity(0);
+		animation: customloader-anim .3s .5s ease-out forwards;
+		
+	}
+	
+	
+	
+	#app-preloader .preloader-spinner {
+		position: fixed;
+		bottom: 46px;
+		left: calc(50vw - calc( 42px / 2px));
+		width:  62px;
+		height:  62px;
+		animation: preloader-spinner .9s linear infinite;
+	}
+	
+	#app-preloader .preloader-spinner .preloader-spinner-icon {
+		width:  62px;
+		height:  62px;
+		stroke: var(--secondary-color);
+		stroke-width: 3px;
+		stroke-dasharray: 314%, 314%;
+		animation: preloader-spinner-icon-anim 1s linear infinite alternate;
+	}
+	
+	@keyframes customloader-anim {
+		0% {
+			filter: opacity(0);
+			transform: translateY(-30px);
+		}
+	
+		100% {
+			filter: opacity(1);
+			transform: translateY(0);
+		}
+	}
+	
+	
+	
+	@keyframes preloader-spinner {
+		0% {
+			transform: rotate(0);
+		}
+	
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	
+	@keyframes preloader-spinner-icon-anim {
+		0% {
+			stroke-dasharray: 0%, 314%;
+		}
+	
+		100% {
+			stroke-dasharray: 314%, 314%;
+		}
+	}
+
+	
   
   /*-- 2. Logo --*/
   
