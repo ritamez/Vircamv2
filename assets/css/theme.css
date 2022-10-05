@@ -547,7 +547,8 @@ small, .small {
 	}
 	
 	#app-preloader .customloader {
-		
+		width: 428px;
+		height: 428px;
 		filter: opacity(0);
 		animation: customloader-anim .3s .5s ease-out forwards;
 		
