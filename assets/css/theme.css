@@ -96,7 +96,8 @@ Support : codings.dev
 }
 
 	/*-- Menú --*/
-	.shock-header .navbar .navbar-nav .megamenu .nav-link .text {
+	.shock-header .navbar .navbar-nav .megamenu .nav-link .text,
+	.shock-header .navbar .navbar-nav .dropdown-menu .nav-link .text {
 		background: linear-gradient(to right,var(--tertiary-color),var(--secondary-color) 50%,var(--gray-color) 50%);
 		background-clip: text;
 		-webkit-background-clip: text;
@@ -109,11 +110,28 @@ Support : codings.dev
 	}
 
 
+	.shock-header .navbar .navbar-nav .dropdown-toggle.has-icon .icon {
+		font-size: .75rem; 
+	  }
+
+
+	  .shock-header .navbar .navbar-icons .nav-link:hover {
+		color: var(--secondary-color);
+	  }
+
 	@media (max-width: 991px){
 		.shock-header .navbar .navbar-collapse .navbar-nav .nav-link:hover {
 			color: var(--secondary-color);
 		}
+
+		.shock-header .navbar .navbar-nav .dropdown-toggle.has-icon .icon {
+			border: none;
+		  }
 	}
+
+
+	
+	
 
 	/*-- End: Menú --*/
 
@@ -148,6 +166,8 @@ Support : codings.dev
 	.text-style-10 { font-size: 1.75rem; font-weight: 100; }
 	.text-style-11 { font-size: 1.2rem; font-weight: 700; }
 	.text-style-12 { font-size: 1.2rem; font-weight: 400; }
+
+	
 
 	@media (max-width: 767px) {
 		.text-style-1 { font-size: 3rem; }
@@ -463,7 +483,7 @@ Support : codings.dev
 
 	/* End: Preloader */
 
-
+	
 
 
 	/* Shape Divider */
