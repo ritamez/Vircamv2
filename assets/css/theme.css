@@ -174,8 +174,8 @@ Support : codings.dev
 		.text-style-2 { font-size: 3rem; }
 		.text-style-3 { font-size: 3rem; }
 		.text-style-4 { font-size: 3rem; }
-		.text-style-5 { font-size: 2.2rem; font-weight: 700; }
-		.text-style-6 { font-size: 2.2rem; }
+		.text-style-5 { font-size: 2rem; font-weight: 700; }
+		.text-style-6 { font-size: 2rem; }
 		.text-style-7 { font-size: 1.75rem; }
 		.text-style-8 { font-size: 1.75rem; }	
 		.text-style-9 { font-size: 1.5rem; }
@@ -484,41 +484,61 @@ Support : codings.dev
 	/* End: Preloader */
 
 	
-
+	
 
 	/* Shape Divider */
 
-	.custom-shape-divider-bottom-1664442233,
-	.custom-shape-divider-bottom-revisiones,
-	.custom-shape-divider-bottom-eventos{
+	.custom-shape-divider-top-1666341567
+	 {
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
 		line-height: 0;
 		transform: rotate(180deg);
 	}
+	
+	
+	
+	
+	
+	.custom-shape-divider-bottom-light,
+	.custom-shape-divider-bottom-dark
+	 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
 
-	.custom-shape-divider-bottom-1664442233 svg,
-	.custom-shape-divider-bottom-revisiones svg,
-	.custom-shape-divider-bottom-eventos svg {
+	.custom-shape-divider-top-1666341567 svg,
+	.custom-shape-divider-bottom-light svg,
+	.custom-shape-divider-bottom-dark svg
+	{
 		position: relative;
 		display: block;
 		width: calc(100% + 1.3px);
 		height: 50px;
 	}
-
-	.custom-shape-divider-bottom-1664442233 .shape-fill,
-	.custom-shape-divider-bottom-revisiones .shape-fill {
-		fill: #1A1A20;
-	}
-
-	.custom-shape-divider-bottom-eventos .shape-fill
-	 {
+	
+	.custom-shape-divider-top-1666341567 .shape-fill,
+	.custom-shape-divider-bottom-light .shape-fill
+	{
 		fill: var(--gray-color);
 	}
 
+
+	
+	.custom-shape-divider-bottom-dark .shape-fill
+	{
+		fill: var(--black-color);
+	}
+
+
+	
 	/* End: Shape Divider */
 
 	
@@ -544,7 +564,10 @@ Support : codings.dev
 	.revision-neumaticos ul > li,
 	.electrico ul > li:first-child,
 	.electrico ul > li:last-child,
-	.electrico ul > li
+	.electrico ul > li,
+	.modificaciones-escapes ul > li:first-child,
+	.modificaciones-escapes ul > li:last-child,
+	.modificaciones-escapes ul > li
 	
 	{
 		
@@ -557,7 +580,9 @@ Support : codings.dev
 
 	.revision-frenos .icon-list .image-icon,
 	.revision-neumaticos .icon-list .image-icon,
-	.electrico .icon-list .image-icon {
+	.electrico .icon-list .image-icon,
+	.modificaciones-escapes .icon-list .image-icon 
+	{
 		
 		height: 2rem;
 		margin-top: calc( 1rem / 2 );
@@ -1037,7 +1062,27 @@ Support : codings.dev
   }
 
 
-  
+  .btn-circle.btn-xl {
+    width: 140px;
+    height: 140px;
+    background-color: var(--gray-color);
+    border-radius: 50%;
+	border: 5px var(--primary-color) solid;
+	
+}
+
+button  h2{
+	margin-bottom: 0;
+}
+
+
+.btn-xl:hover {
+	color:var(--black-color);
+    background-color: var(--secondary-color);
+	text-decoration: none;
+	border: 5px var(--gray-color) solid;
+	
+}
   
   /*-- 2. Logo --*/
   
